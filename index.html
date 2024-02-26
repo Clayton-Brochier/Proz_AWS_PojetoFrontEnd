@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Mercedes-Benz &#169; - CLA Coupé</title>
 </head>
 <body>
@@ -11,54 +12,60 @@
     <header id="header">
         <div class="center conteiner-menu">
             <div class="logo-mercedes">
-                <img src="/imagens/img/logo-mercedes.png" alt="Logo Mercedes-Benz" class="logo-mercedes">
+                <img src="./assets/logo-mercedes.png" alt="Logo Mercedes-Benz" class="logo-mercedes">
                 <h3>Mercedes-Benz</h3>
             </div>
             <div class="menu">
-                <button><a  class="active-menu" href="index.html"><span>Home</span></a></button>
-                <button><a href="sobre.html"><span>About</span></a></button>
-                <button><a href="caracteristicas.html"><span>Motorsport</span></a></button>
-                <button><a href="contato"><span>Contact</span></a></button>
+                <!--Clayton-->
+                <a id=""  class="active-menu btn-nav" href="./index.html"><span>Home</span></a>
+                <!--Taís-->
+                <a class="btn-nav" href="./tecnologia.html"><span>Tecnologia</span></a>
+                <!--Rafael-->
+                <a class="btn-nav" href="./especificacoes.html"><span>Especificações</span></a>
+                <!--Walace-->
+                <a class="btn-nav" href="./seguranca.html"><span>Segurança</span></a>
+                <!--Clayton-->
+                <a class="btn-nav" href="./contato.html"><span>Contato</span></a>
             </div>
-
         </div>
     </header>
+</section>
     <div class="text-chamada">
         <h1>Novo CLA Coupé</h1>
-        <h3>The future is NOW</h3>
+        <h3>O futuro e AGORA</h3>
+        <img src="./assets/logo-amg.png" height="80px" width="300px" alt="">
     </div>
-</section>
+
 
 <section class="itens">
-    <h3>Design e technology</h3><br>
+    <h3>O melhor de um Mercedes-Benz&#169;</h3><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloribus esse architecto inventore <br>harum quaerat voluptatem nulla voluptatum deleniti quae delectus in sequi, sed eaque ullam mollitia reiciendis praesentium blanditiis?</p>
         <br>
         <br>
     <div class="center produto-container">
-        <div class="engine">
-            <img src="./imagens/img/esqueleto-mercedes.jpg" alt="">
-            <h3>Engine</h3>
+        <div class="box">
+            <img src="./assets/motor.png" alt="" height="33.33%">
+            <h3>Desempenho</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae nisi sunt consequatur dolore accusantium quos natus obcaecati, praesentium quidem ipsum totam cupiditate saepe.</p>
         </div>
-        <div class="engine">
-            <img src="./imagens/img/interior-mercedes-frontal.jpg" alt="">
-            <h3>Technology</h3>
+        <div class="box">
+            <img src="./assets/interior2.webp" alt="">
+            <h3>Tecnologia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae nisi sunt consequatur dolore accusantium quos natus obcaecati, praesentium quidem ipsum totam cupiditate saepe.</p>
         </div>
-        <div class="engine">
-            <img src="./imagens/img/interior-mercedes-lateral.jpg" alt="">
+        <div class="box">
+            <img src="./assets/interior-mercedes-lateral.jpg" alt="">
             <h3>Design</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae nisi sunt consequatur dolore accusantium quos natus obcaecati, praesentium quidem ipsum totam cupiditate saepe.</p>
         </div>
     </div>
 </section>
 
-<form action="contato"></form>
 
 <footer>
-    <p>Todos os direitos reservados (c)</p>
+    <p>Mercedes-Benz&#169; Todos os direitos reservados</p>
 </footer>
     <script src="https://kit.fontawesome.com/313ea3afe5.js" crossorigin="anonymous"></script>
-<script src="interatividade.js"></script>
+<script src="./js/interatividade.js"></script>
 </body>
 </html>

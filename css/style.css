@@ -1,0 +1,60 @@
+@import url("./cores.css");
+
+section.main{
+    min-height: 800px;
+    background-image: url(../assets/m-amg-cla-coupe-homePrincipal.jpg);
+    background-size: cover;
+    background-position: center;
+}    
+
+.text-chamada{
+    color: var(--branco);
+    position: absolute;
+    bottom: 500px;
+    left: 50px;
+
+}
+
+.text-chamada h1{
+    font-size: 40px;
+}
+
+
+.text-chamada h3{
+    font-size: 25px;
+    padding: 5px 0 0 0;
+}
+
+
+.box{
+    text-align: left;
+    width: 100%;
+    margin: 0 20px;
+}
+
+
+.produto-container{
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.box img{
+    width: 100%;
+    display: inline-block;/*modificado de block para inlne-block*/
+}
+
+.box h3{
+    text-align: center;
+    background-color: var(--fundoSectionMain);
+    border: 1px solid var(--branco);
+    padding: 8px;
+    color: var(--branco);
+}
+
+.box p{
+    padding: 8px;
+    color: var(--branco);
+    text-align: justify;
+}
+
