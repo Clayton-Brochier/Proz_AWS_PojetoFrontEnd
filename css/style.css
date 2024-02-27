@@ -1,7 +1,7 @@
 @import url("./cores.css");
 
 section.main{
-    min-height: 800px;
+    min-height: 1000px;
     background-image: url(../assets/m-amg-cla-coupe-homePrincipal.jpg);
     background-size: cover;
     background-position: center;
@@ -10,21 +10,37 @@ section.main{
 .text-chamada{
     color: var(--branco);
     position: absolute;
-    bottom: 500px;
+    bottom: 700px;
     left: 50px;
 
 }
 
-.text-chamada h1{
-    font-size: 40px;
+.text-chamada h2{
+    font-size: 3em;
+    
 }
 
 
 .text-chamada h3{
-    font-size: 25px;
-    padding: 5px 0 0 0;
+    font-size: 2em;
+        
 }
 
+.text-chamada img{
+    width: 335px;
+    height: 50px;
+}
+
+.itens{
+    width: 100%;
+    height: 1000px;
+}
+
+
+.itens h3{
+    font-size: 1.5em;
+    margin: 0px;
+}
 
 .box{
     text-align: left;
@@ -32,27 +48,38 @@ section.main{
     margin: 0 20px;
 }
 
-
-.produto-container{
-    width: 100%;
-    justify-content: space-around;
+.center-produto-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
 
 }
 
 .box img{
-    width: 100%;
+    width: 80%;
+    height: 35%;
     display: inline-block;/*modificado de block para inlne-block*/
+    margin-bottom: 50px;
+}
+
+#box-motor{
+    width: 70%;
+    height: 950px;
 }
 
 .box h3{
+    width: 80%;
     text-align: center;
     background-color: var(--fundoSectionMain);
     border: 1px solid var(--branco);
     padding: 8px;
     color: var(--branco);
+    margin-bottom: 50px;
 }
 
 .box p{
+    width: 80%;
     padding: 8px;
     color: var(--branco);
     text-align: justify;

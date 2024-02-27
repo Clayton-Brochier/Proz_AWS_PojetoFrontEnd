@@ -22,6 +22,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
   
 }
 
@@ -42,7 +43,7 @@ body{
 
 header{
   background-color: var(--fundoHeader);
-  height: 70px;
+  height: 75px;
 }
 
 section.itens{
@@ -59,25 +60,28 @@ section.itens h3{
 
 .logo-mercedes{
   display: flex;
+  justify-content: space-around;
+  justify-content: center;
   color: var(--branco);
   margin-top: 5px;
-  height: 60px;
-  width: 60px;
+  height: 64px;
+  width: 64px;
 }
 
-.logo-mercedes h3{
-  margin-top: 5px;
-  padding: 10px 10px;
+.logo-mercedes h1{
+  margin: 5px;
+  padding: 10px;
   display: block;
   margin-left: 0;
+  white-space: nowrap;
   
 }
 
 .conteiner-menu{
   width: 100%;
   justify-content: space-between;
-
-
+  text-align: center;
+  padding-top: 5px;
 }
 
 .btn-nav {
@@ -144,6 +148,8 @@ section.itens h3{
 .conteiner-menu a:hover{
   color: var(--preto);
 }
+
+
 
 footer{
   background-color: var(--fundoFooter);
