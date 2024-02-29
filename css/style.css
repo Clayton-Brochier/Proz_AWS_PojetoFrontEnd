@@ -1,7 +1,8 @@
 @import url("./cores.css");
 
 section.main{
-    min-height: 1000px;
+    height: 800px;
+    width: 100%;
     background-image: url(../assets/m-amg-cla-coupe-homePrincipal.jpg);
     background-size: cover;
     background-position: center;
@@ -10,8 +11,8 @@ section.main{
 .text-chamada{
     color: var(--branco);
     position: absolute;
-    bottom: 700px;
-    left: 50px;
+    bottom: 50%;
+    left: 5%;
 
 }
 
