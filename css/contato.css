@@ -27,6 +27,8 @@ input{
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="tel"],
+.form input[type="datetime-local"],
+.form input[type="time"],
 .form select,
 .form textarea {
   width: 100%; /* Set full width for input fields */
