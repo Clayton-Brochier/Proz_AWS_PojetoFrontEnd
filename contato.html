@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/seguranca.css">
+    <link rel="icon" href="assets/img/logo-mercedes.png" type="image/x-icon">
+  
     <title>Contato - Mercedes-Benz &#169; - CLA Coupé</title>
 </head>
 <body>
@@ -23,7 +27,7 @@
                     <a class="btn-nav" href="./especificacoes.html"><span>Especificações</span></a>
                     <!--Walace-->
                     <a class="btn-nav" href="./seguranca.html"><span>Segurança</span></a>
-                    <!--Clayton-->
+                    <!--Rafael-->
                     <a class="btn-nav" href="./contato.html"><span>Contato</span></a>
                 </div>
             </div>
@@ -31,45 +35,87 @@
     </section>
 
     <div class="form">
-        <h3>Dados pessoais</h3>
+        <h3>Informe seus dados e marque um test-drive</h3>
         <form action="contact">
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="">
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" class="txt-input"/>
+            
+            </div>
             <br>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id=""> 
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="txt-input"> 
+           </div>
+
             <br>
-            <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" id=""> 
+
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" class="txt-input"> 
+            </div>
+
             <br>
-            <label for="text">Informações adicionais</label>
-            <input type="text" name="text" id="">
+
+            <div>
+                <label for="car-model">Selecione o modelo</label>
+                <select name="car-model" id="car-model" class="txt-input">
+                    <option value="AMG CLA 35 4MATIC">Mercedes - AMG CLA 35 4MATIC</option>
+                    <option value="CLA 45 S 4MATIC+">Mercedes - CLA 45 S 4MATIC+</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="adicional-info">Informações adicionais</label>
+                <input type="textarea" name="adicional-info" id="adicional-info">
+            </div>
+       
+            <br>    
+            
+            <div style="margin-top:2.3%;">
+               <label for="data-test">Selecione a Data para o test-drive</label>
+               <input type="datetime-local" name="data-test" id="data-test">
+            </div>
+
+            <br>
+
+            <div style="margin-top:2.3%;">
+                <label for="hr-test">Selecione a Hora para o test-drive</label>
+                <input id="hr-test" type="time" name="hr-test" min="09:00" max="18:00" />
+            </div>
+      
+            <div class="d-flex-chbx" style="margin-top: 8%;">
+                <label for="chk-email">Desejo receber contato por e-mail </label>
+                <input type="checkbox" name="chk-email" id="chk-email" class="chk-input">
+            </div>
+            
+            <br>
+
+            <div class="d-flex-chbx">
+                <label for="chk-tel">Desejo receber contato por telefone </label>
+                <input type="checkbox" name="chk-tel" id="chk-tel" class="chk-input">
+            </div>
+            
+            <br>
+
+            <div class="d-flex-chbx">
+                <label for="chk-wpp">Desejo receber contato por WhatsApp </label>
+                <input type="checkbox" name="chk-wpp" id="chk-wpp" class="chk-input">
+            </div>
+                            
+            
+            <br>
+
+            <div>
+                <button id="btn-submit" style="width: 99%; margin-top:3%;">Enviar</button>
+            </div>
         </form>
 
-        <h3>Agende seu test-drive</h3>
-        <form action="test-drive">
-            <input type="datetime-local" name="" id="">
-            <label for=""></label>
-        </form>
-
-        <p>Os dados fornecidos serão utilizados pela Mercedes-Benz Cars & Vans e seus concessionários, para o envio de ofertas e informações sobre produtos e serviços Mercedes-Benz. <br> Para detalhes sobre seus direitos e demais informações, acesse a Política de Privacidade da Mercedes-Benz Cars & Vans. <br>
-            Ao selecionar o(s) canal(is) abaixo, confirmo meu consentimento para que a Mercedes-Benz Cars & Vans, seus concessionários e <br> fornecedores parceiros utilizem meus dados pessoais acima fornecidos (nome, e-mail, telefone), para o envio de ofertas, convites para eventos e informações sobre produtos e serviços Mercedes-Benz:
+        <p style="margin-top:6%;">Os dados fornecidos serão utilizados pela Mercedes-Benz Cars & Vans e seus concessionários, para o envio de ofertas e informações sobre produtos e serviços Mercedes-Benz. <br> Para detalhes sobre seus direitos e demais informações, acesse a Política de Privacidade da Mercedes-Benz Cars & Vans. <br>
+            Ao selecionar o(s) canal(is) abaixo, confirmo meu consentimento para que a Mercedes-Benz Cars & Vans, seus concessionários e <br> fornecedores parceiros utilizem meus dados pessoais acima fornecidos (nome, e-mail, telefone), para o envio de ofertas, convites para eventos e informações sobre produtos e serviços Mercedes-Benz!
         </p>
-        <form action="">
-            <input type="checkbox" name="" id="">
-            <label for="">Desejo receber contato por e-mail </label>
-            <br>
-            <input type="checkbox" name="" id="">
-            <label for="">Desejo receber contato por telefone </label>
-            <br>
-            <input type="checkbox" name="" id="">
-            <label for="">Desejo receber contato por WhatsApp </label>
-            <br>
-            <input type="checkbox" name="" id="">
-            <label for="">Não desejo receber informativos </label>
-            <br>
-            <button>Submeter</button>
-        </form>
 
     </div>
 
@@ -77,6 +123,8 @@
       <p>Mercedes-Benz&#169; Todos os direitos reservados</p>
   </footer>
       <script src="https://kit.fontawesome.com/313ea3afe5.js" crossorigin="anonymous"></script>
-  <script src="./js/interatividade.js"></script>
+      <script src="./js/interatividade.js"></script>
+      <script src="js/mask-tel.js"> </script>
+
   </body>
   </html>
